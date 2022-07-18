@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Form Validation</title>
+  </head>
+  <body>
+
+    <div class="container">
+      
+      <form action='/' id="form" class="form" method="post" novalidate>
+        <h2>Register with us</h2>
+        
+        <div class="form-control">
+          <label for="username">Username</label>
+          <input type="text" name="username" id="username" placeholder="Enter username" class="input-field"/>
+          <small>Error message</small>
+        </div>
+
+        <div class="form-control">
+          <label for="email">Email</label>
+          <input type="text" name="email" id="email" placeholder="Enter email" class="input-field" />
+          <small>Error message</small>
+        </div>
+
+        <div class="form-control">
+          <label for="password">Password</label>
+          <input type="password" name="password" placeholder="Enter password" class="input-field"/>
+          <small>Error message</small>
+        </div>
+
+        <div class="form-control">
+          <label for="password2">Confirm Password</label>
+          <input
+            type="password"
+            name="password2"
+            placeholder="Enter password again" 
+          />
+          <small>Error message</small>
+        </div>
+
+        <button type="submit">Submit</button>
+
+      </form>
+
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
